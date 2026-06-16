@@ -99,3 +99,11 @@
   padding: 4px 10px;
   border-radius: var(--radius);
 }
+
+@media (max-width: 768px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .project-card { padding: 20px; }
+  .projects-grid { gap: 16px; }
+}

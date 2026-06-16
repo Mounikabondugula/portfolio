@@ -59,3 +59,11 @@
   background: var(--accent-glow);
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .skill-group { padding: 18px; }
+  .skills-grid { gap: 14px; }
+}

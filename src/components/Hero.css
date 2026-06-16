@@ -147,3 +147,11 @@
   .code-card { transform: none; }
   .hero-bio { max-width: 100%; }
 }
+@media (max-width: 480px) {
+  .hero { padding: 100px 0 60px; }
+  .hero-name { font-size: clamp(1.9rem, 10vw, 2.5rem); }
+  .hero-actions { flex-direction: column; }
+  .hero-actions a, .hero-actions button { width: 100%; text-align: center; }
+  .code-body { padding: 16px; }
+  .code-body code { font-size: 0.75rem; }
+}

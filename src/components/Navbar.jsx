@@ -29,7 +29,7 @@ export default function Navbar() {
             <button key={l} onClick={() => handleNav(l)} className="nav-link">{l}</button>
           ))}
           <a
-            href="/Mounika_Bondugula_Resume.pdf"
+            href="/mounika_b_2026.pdf"
             className="nav-resume"
             target="_blank"
             rel="noreferrer"

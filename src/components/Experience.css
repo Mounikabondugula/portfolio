@@ -131,6 +131,11 @@
 @media (max-width: 600px) {
   .timeline { padding-left: 28px; }
   .timeline-dot { left: -24px; }
-  .job-meta { align-items: flex-start; }
   .timeline-card { padding: 18px; }
+}
+@media (max-width: 480px) {
+  .timeline-top { flex-direction: column; gap: 6px; }
+  .job-period { font-size: 0.7rem; }
+  .job-role { font-size: 0.95rem; }
+  .timeline-card { padding: 14px; }
 }

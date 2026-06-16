@@ -76,7 +76,7 @@ export default function Hero() {
           </p>
           <div className="hero-actions">
             <a 
-              href="/Mounika_Bondugula_Resume.pdf" 
+              href="/mounika_b_2026.pdf" 
               target="_blank" 
               rel="noreferrer" 
               className="btn-primary"
@@ -84,7 +84,7 @@ export default function Hero() {
               View Resume
             </a>
             <a 
-              href="/Mounika_Bondugula_Resume.pdf" 
+              href="/mounika_b_2026.pdf" 
               download
               className="btn-secondary"
             >

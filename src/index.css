@@ -107,6 +107,9 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
   padding: 0 24px;
 }
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+}
 
 
 
@@ -143,4 +146,13 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 768px) {
   .section { padding: 72px 0; }
+  .btn-primary, .btn-secondary {
+    padding: 11px 22px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .section { padding: 56px 0; }
+  .section-title { margin-bottom: 12px; }
+  .section-line { margin-bottom: 36px; }
 }

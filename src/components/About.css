@@ -129,3 +129,9 @@
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
 }
+@media (max-width: 480px) {
+  .stat-card { flex: 1 1 calc(50% - 8px); padding: 16px 10px; }
+  .stat-value { font-size: 1.3rem; }
+  .stats-grid { gap: 10px; }
+  .edu-card { flex-direction: column; gap: 10px; }
+}
