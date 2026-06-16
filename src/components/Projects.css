@@ -1,0 +1,101 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+.project-card:nth-child(4n+1) { background: var(--color-1-light); border-color: rgba(255, 222, 89, 0.5); }
+.project-card:nth-child(4n+2) { background: var(--color-2-light); border-color: rgba(126, 217, 87, 0.5); }
+.project-card:nth-child(4n+3) { background: var(--color-3-light); border-color: rgba(203, 108, 230, 0.5); }
+.project-card:nth-child(4n+4) { background: var(--color-4-light); border-color: rgba(56, 182, 255, 0.5); }
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-icon { font-size: 1.8rem; }
+.project-link-icon {
+  color: var(--text-dim);
+  transition: color 0.2s;
+}
+.project-link-icon:hover { color: var(--accent-light); }
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.project-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: -6px;
+}
+
+.project-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.project-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+}
+.project-highlights li {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.55;
+}
+.project-highlights li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  top: 2px;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+.project-tag {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  background: var(--accent-glow);
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: var(--radius);
+}
