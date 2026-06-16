@@ -18,8 +18,8 @@ export default function Contact() {
     })
 
     gsap.from('.contact-card', {
-      scrollTrigger: { trigger: '.contact-links', start: 'top 80%' },
-      x: -30, opacity: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out'
+      scrollTrigger: { trigger: '.contact-links', start: 'top 85%' },
+      y: 20, opacity: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out'
     })
 
     gsap.from('.cta-box', {
